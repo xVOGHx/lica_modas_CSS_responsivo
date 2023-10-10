@@ -1,0 +1,150 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container,
+.conteudo {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header {
+    padding: 16px 0;
+    margin-bottom: 56px;
+    background-color: #ffafcc;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header a {
+    text-decoration: none;
+    color: black;
+}
+
+header div nav li {
+    display: inline;
+    margin-right: 10px;
+}
+
+.container {
+    display: flex;
+}
+
+.container > img {
+    max-width: 320px;
+}
+
+#sobre {
+    padding-left: 16px;
+}
+
+#sobre > h2 {
+    border-bottom: 3px solid #ffafcc;
+}
+
+#sobre > p {
+    padding-top: 16px;
+}
+
+.conteudo {
+    padding-top: 16px;
+}
+
+.conteudo h2 {
+    margin: 50px 0px 40px 0px;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #ffafcc;
+}
+
+.produtos {
+    display: grid;
+    grid-template-columns: repeat(4, 23.5%);
+    column-gap:1%;
+    row-gap: 5%;
+}
+
+.produto img{
+    max-width: 100%;
+}
+
+.produto a {
+    text-decoration: none;
+    color: black;
+}
+
+.produto a h3 {
+    font-size: 1.3em;
+    padding: 16px 0;
+}
+
+.produto button {
+    font-weight: bold;
+    border: none;
+    border-radius: 5%;
+    background-color: #ffafcc;
+    margin: 16px 0;
+    padding: 8px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 767px){
+    .container{
+        display: block;
+        max-width: 90%;
+    }
+
+    .container > img {
+        width: 100%;
+        margin: 0;
+        max-width: 100%;
+    }
+
+    .conteudo{
+        max-width: 90%;
+    }
+
+    .produtos{
+        display: block;
+    }
+
+    .produto{
+        padding-bottom: 16px;
+    }
+
+    #sobre > h2{
+        padding: 16px 0;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px){
+    .container{
+        display: block;
+        max-width: 90%;
+    }
+
+    .container > img {
+        width: 100%;
+        margin: 0;
+        max-width: 100%;
+    }
+
+    .conteudo{
+        max-width: 90%;
+    }
+
+    .produtos{
+        grid-template-columns: repeat(2, 49%);
+    }
+
+    #sobre > h2{
+        padding: 16px 0;
+    }
+}
